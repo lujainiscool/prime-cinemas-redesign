@@ -178,7 +178,7 @@ const movies = [
         title: "Khali Balak Mn Nfsak",
         genre: "Comedy",
         time: "1h 50m",
-        image: "assests/images/khalibalak.jpeg",
+        image: "assests/images/KhaliBalak.jpeg",
         status: "soon"
     },
     {
