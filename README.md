@@ -19,7 +19,7 @@ A modern UI redesign of the Prime Cinemas Jordan website.
 
 ## Live Demo
 
-https://yourusername.github.io/prime-cinemas-redesign/
+https://lujainiscool.github.io/prime-cinemas-redesign/
 
 ## Screenshots
 
