@@ -79,7 +79,7 @@ nav.scrolled .logo-img {
 
 /* --- Full Screen Immersive Hero --- */
 #hero {
-    height: 90vh; background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url('../assests/images/BG-topbanner.jpg') center/cover no-repeat;
+    height: 90vh; background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url('../assets/images/BG-topbanner.jpg') center/cover no-repeat;
     position: relative; display: flex; align-items: center; padding: 0 5%;
 }
 .hero-overlay { position: absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(to top, #1e0102, transparent 80%); }
@@ -192,7 +192,7 @@ nav.scrolled .logo-img {
 
 /* --- Footer Configuration --- */
 footer {
-    background: linear-gradient(rgba(11,11,11,0.9), rgba(11,11,11,0.95)), url('../assests/images/footerbg.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(11,11,11,0.9), rgba(11,11,11,0.95)), url('../assets/images/footerbg.jpg') center/cover no-repeat;
     padding: 60px 5% 30px; border-top: 1px solid rgba(255,255,255,0.05);
 }
 .footer-content { display: flex; justify-content: space-between; max-width: 1400px; margin: 0 auto 40px; }
