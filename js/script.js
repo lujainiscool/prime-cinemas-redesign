@@ -34,7 +34,7 @@ const movies = [
         genre: "Action",
         time: "2h 30m",
          synopsis: "Years after witnessing the death of Maximus, Lucius is forced into the Colosseum after his home is conquered by Rome's tyrannical new emperors.",
-        image: "assests/images/gladiator.jpg",
+        image: "assets/images/gladiator.jpg",
         status: "now",
         showtimes: {
             abdali: ["1:00 PM", "4:00 PM", "7:00 PM", "10:00 PM"],
@@ -48,7 +48,7 @@ const movies = [
         genre: "Action",
         time: "2h 5m",
         synopsis: "A ragtag crew of small-time hustlers gets pulled into a high-stakes scheme that spirals fast, testing their loyalty to each other and the city they call home.",
-        image: "assests/images/7dogs.jpeg",
+        image: "assets/images/7dogs.jpeg",
         status: "now",
         showtimes: {
             abdali: ["5:20 PM", "7:40 PM", "10:00 PM", "12:00 AM"],
@@ -62,7 +62,7 @@ const movies = [
         genre: "Horror",
         time: "1h 32m",
         synopsis: "Trapped in an endless maze of empty office corridors that shouldn't exist, a small group must find a way out before whatever's stalking them does.",
-        image: "assests/images/backrooms.jpeg",
+        image: "assets/images/backrooms.jpeg",
         status: "now",
         showtimes: {
             abdali: ["7:05 PM", "9:05 PM", "12:15 AM"],
@@ -75,7 +75,7 @@ const movies = [
         genre: "Comedy",
         time: "2h 10m",
         synopsis: "A mismatched pair of rivals-turned-partners stumble through one chaotic misadventure after another, proving opposites really do cause the most trouble.",
-        image: "assests/images/saker&kanarya.jpeg",
+        image: "assets/images/saker&kanarya.jpeg",
         status: "now",
         showtimes: {
             abdali: ["5:30 PM★", "6:55 PM+", "7:55 PM★", "9:15 PM+", "10:15 PM★", "11:00 PM+", "11:45 PM+"],
@@ -89,7 +89,7 @@ const movies = [
         genre: "Animation",
         time: "1h 50m",
         synopsis: "Woody, Buzz, and the gang face their strangest challenge yet when a new kind of toy threatens to change what it means to be loved by a kid.",
-        image: "assests/images/toystory.jpeg",
+        image: "assets/images/toystory.jpeg",
         status: "now",
         showtimes: {
             abdali: ["7:00 PM+", "9:00 PM+"],
@@ -103,7 +103,7 @@ const movies = [
         genre: "Comedy",
         time: "1h 45m",
         synopsis: "On the night before a life-changing decision, old friends gather for one last conversation that says more about them than any of them expected.",
-        image: "assests/images/elkalam.jpeg",
+        image: "assets/images/elkalam.jpeg",
         status: "now",
         showtimes: {
             baraka: ["8:30 PM", "9:30 PM", "11:45 PM"]
@@ -116,7 +116,7 @@ const movies = [
         time: "1h 40m",
         synopsis: "A quiet family drama about the weight of unspoken resentment, and what it takes to finally let go of a grudge that's lasted a generation.",
 
-        image: "assests/images/ethma.jpeg",
+        image: "assets/images/ethma.jpeg",
         status: "now",
         comingToBranches: { abdali: "Mon, 6 Jul" },
         showtimes: {
@@ -129,7 +129,7 @@ const movies = [
         genre: "Action",
         time: "2h 0m",
         synopsis: "A disgraced ex-operative is pulled back into a world he swore off, racing against former allies to stop a plot only he can see coming.",
-        image: "assests/images/michael.jpeg",
+        image: "assets/images/michael.jpeg",
         status: "now",
         comingToBranches: { abdali: "Mon, 6 Jul" },
         showtimes: {
@@ -142,7 +142,7 @@ const movies = [
         genre: "Sci-Fi",
         time: "2h 15m",
         synopsis: "Kara Zor-El steps out of her cousin's shadow to defend a world that isn't always sure it wants her help — on her own terms.",
-        image: "assests/images/supergirl.jpeg",
+        image: "assets/images/supergirl.jpeg",
         status: "now",
         comingToBranches: { abdali: "Mon, 6 Jul" },
         showtimes: {
@@ -154,7 +154,7 @@ const movies = [
         title: "Minions",
         genre: "Animation",
         time: "1h 30m",
-        image: "assests/images/minions.jpeg",
+        image: "assets/images/minions.jpeg",
         status: "soon"
     },
     {
@@ -162,7 +162,7 @@ const movies = [
         title: "Spider-Man",
         genre: "Action",
         time: "2h 20m",
-        image: "assests/images/spiderman.jpeg",
+        image: "assets/images/spiderman.jpeg",
         status: "soon"
     },
     {
@@ -170,7 +170,7 @@ const movies = [
         title: "The Keeper",
         genre: "Drama",
         time: "1h 55m",
-        image: "assests/images/keeper.jpeg",
+        image: "assets/images/keeper.jpeg",
         status: "soon"
     },
     {
@@ -178,7 +178,7 @@ const movies = [
         title: "Khali Balak Mn Nfsak",
         genre: "Comedy",
         time: "1h 50m",
-        image: "assests/images/KhaliBalak.jpeg",
+        image: "assets/images/KhaliBalak.jpeg",
         status: "soon"
     },
     {
@@ -186,7 +186,7 @@ const movies = [
         title: "Ibn Meen",
         genre: "Drama",
         time: "1h 48m",
-        image: "assests/images/ibnmeen.jpeg",
+        image: "assets/images/ibnmeen.jpeg",
         status: "soon"
     },
     {
@@ -194,7 +194,7 @@ const movies = [
         title: "Infiltrate",
         genre: "Action",
         time: "1h 58m",
-        image: "assests/images/infiltrate.jpeg",
+        image: "assets/images/infiltrate.jpeg",
         status: "soon"
     },
     {
@@ -202,7 +202,7 @@ const movies = [
         title: "Obsession",
         genre: "Horror",
         time: "1h 45m",
-        image: "assests/images/obession.jpeg",
+        image: "assets/images/obession.jpeg",
         status: "soon"
     },
     {
@@ -210,7 +210,7 @@ const movies = [
         title: "Evil Dead Rise",
         genre: "Horror",
         time: "1h 36m",
-        image: "assests/images/evildeadburn.jpeg",
+        image: "assets/images/evildeadburn.jpeg",
         status: "soon"
     },
     {
@@ -218,7 +218,7 @@ const movies = [
         title: "The Furious",
         genre: "Action",
         time: "2h 12m",
-        image: "assests/images/theFurious.jpeg",
+        image: "assets/images/theFurious.jpeg",
         status: "soon"
     }
 ];
