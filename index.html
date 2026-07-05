@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Cinemas | Premium Experience</title>
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div id="loader" class="loader-wrapper">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Sticky Navigation Bar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <!-- Using your provided logonew.png image file verbatim -->
+            <a href="#" class="brand-logo">
+                <img src="logonew.png" alt="Prime Cinemas Logo" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#now-showing">Now Showing</a></li>
+                <li><a href="#coming-soon">Coming Soon</a></li>
+                <li><a href="#locations">Cinemas</a></li>
+            </ul>
+            <div class="nav-actions">
+                <input type="text" id="search-input" placeholder="Search movies...">
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="badge">Premiere</span>
+            <h1 id="hero-title">Gladiator II</h1>
+            <p class="hero-meta">Action/Drama &bull; 2h 30m</p>
+            <p class="hero-desc">Years after witnessing the death of the revered hero Maximus, Lucius is forced to enter the Colosseum after his home is conquered by the tyrannical Emperors who now lead Rome with an iron fist.</p>
+            <div class="hero-buttons">
+                <a href="#now-showing" class="btn btn-primary">View Show Times</a>
+                <button class="btn btn-secondary" onclick="openTrailerModal()">Watch Trailer</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Now Showing & Showtimes Section -->
+    <section id="now-showing" class="section">
+        <div class="section-header">
+            <h2>Now Showing</h2>
+            <div class="filters" id="movie-filters">
+                <button class="filter-btn active" data-filter="all">All Genres</button>
+                <button class="filter-btn" data-filter="Action">Action</button>
+                <button class="filter-btn" data-filter="Sci-Fi">Sci-Fi</button>
+                <button class="filter-btn" data-filter="Drama">Drama</button>
+                <button class="filter-btn" data-filter="Horror">Horror</button>
+                <button class="filter-btn" data-filter="Comedy">Comedy</button>
+                <button class="filter-btn" data-filter="Animation">Animation</button>
+            </div>
+        </div>
+        <p class="branch-note">EZMA, MICHAEL &amp; SUPERGIRL start at Prime Cinemas - Abdali Mall from Monday, 6 July.</p>
+        <div class="movie-grid" id="movies-container">
+            <!-- Injected dynamically via JS with branch showtimes -->
+        </div>
+    </section>
+
+    <!-- Coming Soon Section -->
+    <section id="coming-soon" class="section-alt">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Coming Soon</h2>
+            </div>
+            <div class="movie-grid minimal-grid" id="coming-soon-container">
+                <!-- Injected dynamically via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Cinema Locations Section with Maps & Contact Details -->
+    <section id="locations" class="section">
+        <div class="section-header">
+            <h2>Our Cinemas</h2>
+        </div>
+        <div class="locations-grid" id="locations-container">
+            <!-- Injected dynamically via JS to maintain precise structural cleanliness -->
+        </div>
+    </section>
+
+    <!-- Trailer Modal -->
+    <div id="trailer-modal" class="modal">
+        <div class="modal-content glassmorphism">
+            <span class="close-btn" onclick="closeModals()">&times;</span>
+            <div class="video-container">
+                <div class="fake-video">
+                    <p>Playing Official Movie Trailer...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- Showtimes Modal (Triggers when "Show Times" is clicked on a movie card) -->
+    <div id="showtimes-modal" class="modal">
+        <div class="modal-content glassmorphism booking-content">
+            <span class="close-btn" onclick="closeModals()">&times;</span>
+            <h2 id="showtimes-modal-title"></h2>
+            <div id="showtimes-modal-body" class="showtimes-accordion"></div>
+        </div>
+    </div>
+
+    <!-- Booking Confirmation Modal (Triggers upon selecting a specific showtime) -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content glassmorphism booking-content">
+            <span class="close-btn" onclick="closeModals()">&times;</span>
+            <h2>Confirm Selection</h2>
+            <div id="booking-summary" class="booking-summary-box">
+                <!-- Data filled dynamically based on selected seat time -->
+            </div>
+            <form id="booking-form" onsubmit="submitBooking(event)">
+                <div class="form-group">
+                    <label>Select Ticket Quantity</label>
+                    <input type="number" min="1" max="10" value="2" id="ticket-qty" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Reserve Seats Now</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="logonew.png" alt="Prime Cinemas" class="footer-logo">
+                <p>The standard of luxury entertainment in Jordan.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h3>Branches</h3>
+                    <a href="#locations">Abdali Mall (Amman)</a>
+                    <a href="#locations">Baraka Mall (Amman)</a>
+                    <a href="#locations">Irbid City Center (Irbid)</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Prime Cinemas Redesign Portfolio Project.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
