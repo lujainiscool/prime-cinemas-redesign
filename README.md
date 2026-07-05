@@ -25,13 +25,13 @@ https://lujainiscool.github.io/prime-cinemas-redesign/
 ## 📸 Before Redesign
 
 <p align="center">
-  <img src="screenshots/before2.png" width="600"/>
-</p>
-
-<p align="center">
-  <img src="screenshots/before2.png" width="600"/>
-</p>
-
-<p align="center">
   <img src="screenshots/before3.png" width="600"/>
+</p>
+
+<p align="center">
+  <img src="screenshots/before2.png" width="600"/>
+</p>
+
+<p align="center">
+  <img src="screenshots/before1.png" width="600"/>
 </p>
