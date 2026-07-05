@@ -75,7 +75,7 @@ const movies = [
         genre: "Comedy",
         time: "2h 10m",
         synopsis: "A mismatched pair of rivals-turned-partners stumble through one chaotic misadventure after another, proving opposites really do cause the most trouble.",
-        image: "assets/images/saker&kanarya.jpeg",
+        image: "assets/images/saker-kanarya.jpeg",
         status: "now",
         showtimes: {
             abdali: ["5:30 PM★", "6:55 PM+", "7:55 PM★", "9:15 PM+", "10:15 PM★", "11:00 PM+", "11:45 PM+"],
